@@ -3,13 +3,12 @@ package methodoverriding;
  class A {
 
     int i,j;
-    A(){
-        System.out.println("inside A");
-    }
     A(int a, int b){
+        System.out.println("inside A");
         i=a;
         j=b;
     }
+
 
     //display i and j
     void show(){
@@ -20,29 +19,28 @@ package methodoverriding;
 }
 
  class B extends A {
-     int k,m ;
-     B(){
-         System.out.println("inside B");
-     }
-     B(int a,int b){
-         k=a;
-         m=b;
+     int k;
+
+     B(int a,int b ,int c){
+         super(a,b);
+         k=c;
+
 
      }
 
-     //display i and j
+     //display k
 
      void show() {
          System.out.println("Inside class B");
-         System.out.println("i = " + k);
-         System.out.println("j = " + m);
+         System.out.println("k = " + k);
+
      }
 
  }
 
  public class OverRide{
     public static void main(String[] args) {
-        B subOB = new B(1,2);
+        B subOB = new B(1,2,3);
         subOB.show();
 
     }
