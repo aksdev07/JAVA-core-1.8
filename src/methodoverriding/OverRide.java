@@ -4,7 +4,6 @@ package methodoverriding;
 
     int i,j;
     A(int a, int b){
-        System.out.println("inside A");
         i=a;
         j=b;
     }
@@ -13,8 +12,7 @@ package methodoverriding;
     //display i and j
     void show(){
         System.out.println("inside class A");
-        System.out.println("i = " + i);
-        System.out.println("j = " + j);
+        System.out.println("Value of i : " + i + "  j: " + j);
     }
 }
 
@@ -31,8 +29,8 @@ package methodoverriding;
      //display k
 
      void show() {
-         System.out.println("Inside class B");
-         System.out.println("k = " + k);
+
+         System.out.println("Value of K :" + k);
 
      }
 
