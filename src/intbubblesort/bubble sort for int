@@ -1,0 +1,4 @@
+Explanation:
+
+It sorts the array pair by pair, i.e at first it compares the first two elements and according to ascending or descending requirement it swaps with each other and moves to next pair.
+It continues swapping till it ends the last pair and then it again starts swapping from first pair.
