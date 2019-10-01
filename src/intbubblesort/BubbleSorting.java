@@ -1,7 +1,7 @@
 package intbubblesort;
 
 public class BubbleSorting {
-    public int[] bSortMethod(int[] x){
+    private int[] bSortMethod(int[] x){
         int temp;
 
         for(int j=0;j<x.length-1;j++) {
@@ -12,26 +12,22 @@ public class BubbleSorting {
                     x[i] = x[i + 1];
                     x[i + 1] = temp;
                 }
-
-
-
-
             }
         }
             return x;
     }
 
+
     public static void main(String[] args) {
-        int a[]={5,4,3,2,1};
+        int[] a={5,4,4,3,2,1};
         BubbleSorting ref=new BubbleSorting();
-        for(int i=0;i<a.length-1;i++){
-            System.out.print(a[i]);
-        }
+    //This displays the initial array
+        for(int b:a)
+            System.out.print(b);
         System.out.println(" ");
-        a=ref.bSortMethod(a);
-        for(int i=0;i<a.length;i++){
-            System.out.print(a[i]);
-        }
+        //This displays after being sorted
+        for(int b:ref.bSortMethod(a))
+        System.out.print(b);
 
     }
 }
