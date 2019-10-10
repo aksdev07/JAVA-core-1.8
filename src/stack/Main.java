@@ -23,7 +23,7 @@ public class Main {
 
         }
 
-        //this is an exaple of reversing a string using Stack
+        //this is an example of reversing a string using Stack
         String string = "I am working on Collection Framework";
         System.out.println(string);
         Stack<Character> original = new Stack<>();
