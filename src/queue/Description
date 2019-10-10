@@ -1,0 +1,4 @@
+java.util.Queue
+It is interface which extends Collection class
+An ordered list of object which follows FIFO for insertion and deletion of objects, in other words
+objects are inserted (enqueued) at the end of the queue and removed (dequeued) at the beginning of the queue.
