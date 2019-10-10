@@ -1,0 +1,4 @@
+java.util.stack
+A stack is an ordered list of objects inserted and removed following LIFO policy
+
+We insert object using push() method and remove objects using pop() method
