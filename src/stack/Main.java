@@ -1,5 +1,8 @@
 package stack;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Stack;
 
 public class Main {
@@ -23,24 +26,23 @@ public class Main {
 
         }
 
-        //this is an example of reversing a string using Stack
+     /*   //this is an example of reversing a string using Stack
         String string = "I am working on Collection Framework";
         System.out.println(string);
         Stack<Character> original = new Stack<>();
-        Character reversed ;
-        Stack<Character> reversedStack = new Stack<>();
+       // Character reversed[] = new Character[200];
+        List<Character> chars = new ArrayList<Character>();
+
+       //        Stack<Character> reversedStack = new Stack<>();
         for (int i=0;i<string.length();i++){
 
                 original.push(string.charAt(i));
-
-
         }
         System.out.println(original);
-        for (int i=0;i<string.length();i++){
-            reversed=original.pop();
-            reversedStack.push(reversed);
-                    }
-        System.out.println(reversedStack);
+        for (int i=0;i<string.length();i++) chars.set(i, original.pop());
+
+        String s=new String(String.valueOf(chars));
+        System.out.println(s);*/
 
 
     }
