@@ -1,0 +1,4 @@
+Autounboxing is the process by which value of boxed object is automatically extracted(unboxed) from a type wrapper
+whenever required.
+
+There is no need to call methods intValue() or doubleValue()

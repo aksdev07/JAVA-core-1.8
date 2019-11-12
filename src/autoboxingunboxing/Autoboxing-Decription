@@ -1,0 +1,2 @@
+Autoboxing is process by which primitive data type is automatically encapsulated (boxed) to its equivalent type wrapper
+whenever an object of that type is needed.
