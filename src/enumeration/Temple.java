@@ -7,7 +7,7 @@ public class Temple {
 
     public static void main(String[] args) {
         TempleName t;
-        t = TempleName.Shankar;
+        t = TempleName.Hanuman;
         if (t == TempleName.Shiv) {
             System.out.println(t);
         } else {
