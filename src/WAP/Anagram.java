@@ -15,12 +15,12 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        Anagram Obj = new Anagram("aabb","bbaa");
+        Anagram Obj = new Anagram("aaabb","bbaa");
         for (Character c:Obj.s1.toCharArray()){
-            Obj.h1.put(c,Obj.h1.getOrDefault(c,0));
+            Obj.h1.put(c,1+Obj.h1.getOrDefault(c,0));
         }
         for (Character c:Obj.s2.toCharArray()){
-            Obj.h2.put(c,Obj.h2.getOrDefault(c,0));
+            Obj.h2.put(c,1+Obj.h2.getOrDefault(c,0));
         }
         if (Obj.h1.equals(Obj.h2)){
             System.out.println("YES");
