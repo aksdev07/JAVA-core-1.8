@@ -1,5 +1,6 @@
 package WAP;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,15 +12,14 @@ public class FindNonRepeatingCharacter {
         this.s1 = s1;
     }
 
-    protected Character getNonRepeatChar() {
-        char a = 'a';
+    protected ArrayList<Character> getNonRepeatChar() {
+        ArrayList<Character> a = new ArrayList<>();
         for (Character c : s1.toCharArray()) {
             h1.put(c, 1+h1.getOrDefault(c, 0));
         }
         for (Map.Entry<Character, Integer> set : h1.entrySet()) {
             if (set.getValue() == 1) {
-                a = set.getKey();
-                break;
+                a.add(set.getKey());
             }
 
         }
