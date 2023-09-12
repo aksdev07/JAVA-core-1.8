@@ -15,7 +15,7 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        Anagram Obj = new Anagram("aaabb","bbaa");
+        Anagram Obj = new Anagram("bbaa","bbaa");
         for (Character c:Obj.s1.toCharArray()){
             Obj.h1.put(c,1+Obj.h1.getOrDefault(c,0));
         }
