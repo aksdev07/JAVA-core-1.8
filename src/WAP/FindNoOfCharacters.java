@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class FindNoOfCharacters {
     public static void main(String[] args) {
-        String s = "aaaabbbbccc";
+        String s = "aaaabbbbcccaaa";
 
         HashMap<Character,Integer> hm = new HashMap<>();
         for (char c : s.toCharArray()){
@@ -15,9 +15,10 @@ public class FindNoOfCharacters {
                     hm.put(c,1);
             }
         }
+
         for (Map.Entry<Character,Integer> entry: hm.entrySet()){
-            System.out.print(String.valueOf(entry.getKey()));
-            System.out.println(String.valueOf(entry.getValue()));
+            System.out.print(entry.getKey());
+            System.out.println(entry.getValue());
         }
 
     }
