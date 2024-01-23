@@ -4,9 +4,34 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindNoOfCharacters {
-    public static void main(String[] args) {
-        String s = "aaaabbbbcccaaa";
+   /*
+   This method prints the char and it equivalent count
+   * for example: aabbaa --->
+   *              a2
+   *              b2
+   *              a2
+   * Don't get confused with HashMap logic where all the repeated characters are counted at once
+   * */
+    public static void charactersWithCount(String string){
+        StringBuilder stringBuilder = new StringBuilder(string);
+        char c = stringBuilder.charAt(0);
+        int count =0;
+        for (char x : stringBuilder.toString().toCharArray()){
+            if(c==x){
+                count++;
+            }else {
+                System.out.println(String.valueOf(c)+count);
+                c=x;
+                count=1;
+            }
+        }
+        System.out.println(String.valueOf(c)+(count));
 
+    }
+    public static void main(String[] args) {
+        String s = "ddddjjaaaaaa";
+
+FindNoOfCharacters.charactersWithCount(s);
         HashMap<Character,Integer> hm = new HashMap<>();
         for (char c : s.toCharArray()){
             if(hm.containsKey(c))
