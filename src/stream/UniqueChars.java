@@ -19,5 +19,22 @@ public class UniqueChars {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         for (Character x : unique.keySet())
             System.out.print(x);
+
+        /*By using flatmap*/
+
+ /*       List<String> word = Arrays.asList(sentence,"sd")
+                .stream()
+                .distinct()
+                .flatMap(letter->Arrays.stream(letter.split("")))
+                .collect(Collectors.toList());
+        System.out.println(word);*/
+
+        List<String> words = Arrays.asList(sentence.toUpperCase());
+        List<String> uniqueLetters = words.stream()
+                .flatMap(word -> Arrays.stream(word.split("")))
+                .distinct()
+                .collect(Collectors.toList());
+        System.out.println(uniqueLetters);
+
     }
 }
