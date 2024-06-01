@@ -12,5 +12,11 @@ public class SwitchCase {
             default -> "8am";
         };
         System.out.println(result);
+
+       result = switch (day){
+            case "Monday" : yield "8am";
+            default : yield "9am";
+        };
+        System.out.println(result);
     }
 }
