@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class FindIndexOfRepeatedChars {
     public static void main(String[] args) {
-        String  input = "1234555567";
+        String  input = "123444567";
         HashMap<Character, String> hm = new HashMap<>();
         int count = 0;
         for (Character c : input.toCharArray()){
@@ -26,7 +26,7 @@ public class FindIndexOfRepeatedChars {
                 x=s;
             }
         }
-
+        System.out.println(x);
         System.out.print("{"+x.charAt(0)+",");
         System.out.print(x.charAt(x.length()-1)+"}");
 
